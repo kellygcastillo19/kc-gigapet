@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Giga Pet</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Meet Bub the Bear 
+      </h1>
+    </header>
+
+    <main>
+      <section class="pet-image-container">
+        <!-- Replace pet image with your own pet image -->
+        <img id="pet" src="https://cdn.glitch.global/18e0afab-1c10-47cd-a032-97427b745846/pandahappy.gif?v=1668223797392">
+      </section>
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span> belly pats (per min)</strong></div>
+        <div class="button-container">
+          <!-- The onclick event that each of these buttons have will execute the JavaScript function when the button is clicked. -->
+          <!-- https://www.w3schools.com/jsref/event_onclick.asp -->
+          <!-- When clicked, button will execute the clickedTreatedButton() function -->
+          <button onclick="clickedTreatButton()" class="treat-button">Treat</button>
+          <!-- When clicked, button will execute the clickedPlayButton() function -->
+          <button onclick="clickedPlayButton()" class="play-button">Play</button>
+          <!-- When clicked, button will execute the clickedExerciseButton() function -->
+          <button onclick="clickedExerciseButton()" class="exercise-button">Exercise</button>
+          <!-- When clicked, button will execute the clickedSleepButton() function -->
+          <button onclick="clickedSleepButton()" class="sleep-button">Sleep</button>
+          <!-- When clicked, button will execute the clickedWakeUpButton() function -->
+          <button onclick="clickedWakeUpButton()" class="wake-button">Wake Up</button>
+        </div>
+        <!-- This section is the comment container, which contains all the comments that can come from the gigapet. -->
+        <section class="comment-container">
+            <p id="treat-comment">NOM NOM NOM NOM NOM NOM</p>
+            <p id="play-comment">he he he he he he! </p>
+            <p id="exercise-comment">HU HU HU HU HU HU</p>
+            <p id="sleep-comment">hmm...hmm...</p>
+            <p id="awake-comment">aaahmmm...</p>
+        </section>
+      </section>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>

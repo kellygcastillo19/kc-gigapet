@@ -1,0 +1,121 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  
+  body {
+    background-color: #9CAF88;
+    margin: 25px;
+    font-family: Courier New, monospace;
+    color: white;
+  }
+  
+  main {
+    display: block;
+    height: 175px;
+  }
+  
+  header {
+    border-bottom: 5px dotted white;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  p {
+    max-width: 600px;
+  }
+  
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  footer {
+    padding-top: 25px;
+    border-top: 1px solid black;
+  }
+  
+  footer a {
+    float: left;
+    margin: 5px;
+  }
+  
+  .dashboard div {
+    display: block;
+  }
+  
+  .pet-image-container {
+    float: left;
+    padding: 10px;
+    
+  }
+  
+/* Sets the dimensions for the element with Id pet. This element is changing as different actions buttons are being clicked. */
+  #pet {
+    height: 500px;
+    width: 450px;
+  }
+  
+  .dashboard {
+    float: left;
+    padding: 20px;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    display: inline-block;
+    float: left;
+    width: fit-content;
+    margin-right: 10px;
+    background-color: #E8C7C8;
+    border-color: #F17db1;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    font-family: Courier New, monospace;
+    color: white;
+  }
+
+/* This element has the class comment-container. This contains all the elements that represent comments coming from the gigapet. */
+.comment-container {
+    font-size: 75px;
+    font-family: Courier New, monospace;
+    color: white;
+}
+
+/* The display property is set to none for all of these comments so that they remain hidden until the .fadeToggle() method makes them appear by fading them in. */
+/* If they weren't set to none, the elements would be visible and the .fadeToggle() method would fade them out instead of in. */
+#treat-comment {
+  display:none;
+}
+
+#play-comment {
+  display:none;
+}
+
+#exercise-comment {
+  display:none;
+}
+
+#sleep-comment {
+  display:none;
+}
+
+#awake-comment {
+  display:none;
+}
